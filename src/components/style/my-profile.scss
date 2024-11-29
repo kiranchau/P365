@@ -1,0 +1,102 @@
+@import "../style/abstracts/variable";
+
+.tab-wrap {
+    padding: 10px;
+    border: 1px solid #d7d7d7;
+    border-radius: 6px;
+    height: 85vh;
+    overflow: auto;
+
+    .content-wrap {
+        padding: 20px;
+    }
+.policy-details-wrap{
+    tr:last-child{
+    td{
+        border: none;
+    }
+    }
+    .policy-image{
+        img{
+            width: 130px;
+        }
+    }
+    a{
+        color: $PrimaryColor;
+    }
+}
+    .tabs {
+        background-color: #edf0f5;
+        border-radius: 6px;
+        display: flex;
+        flex-wrap: wrap;
+
+        button {
+            padding: 10px 40px;
+            outline: none;
+            border: 1px solid transparent;
+            margin: 5px;
+            background-color: transparent;
+        }
+
+        .active {
+            color: #fff;
+            border: 1px solid transparent;
+            background-color: $PrimaryColor;
+            border-radius: 6px;
+            transition: ease-in-out .5s;
+            -webkit-box-shadow: -1px 0px 4px -1px rgba(168, 168, 168, 1);
+            -moz-box-shadow: -1px 0px 4px -1px rgba(168, 168, 168, 1);
+            box-shadow: -1px 0px 4px -1px rgba(168, 168, 168, 1);
+        }
+    }
+
+    .person-name-wrap {
+
+        .person-name {
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+
+    .personal-info-wrap {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+        gap: 20px;
+        margin-top: 40px;
+
+        .personal-info {
+            text-align: left;
+        }
+
+        .label {
+            color: #999;
+        }
+
+        .value {
+            font-weight: bold;
+        }
+    }
+
+    .my-policies {
+        .policies {
+            border: 1px solid #d7d7d7;
+            border-radius: 6px;
+            overflow: auto;
+            .policy{
+                display: grid;
+                grid-template-columns: 200px auto;
+            }
+        }
+        .action-btn{
+           button{
+            border: none;
+            color: $PrimaryColor;
+            background: transparent;
+            &:hover{
+                text-decoration: underline;
+            }
+           }
+        }
+    }
+}

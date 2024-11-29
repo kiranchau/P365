@@ -1,0 +1,23 @@
+.contact-container {
+    max-width: 50rem;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.contact-form-container {
+    margin-top: 3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 0px 6px 4px #CCC;
+}
+
+.h-6rem {
+    height: 6rem;
+}
+
+.contact-bg {
+    height: 98.75vh;
+    background-image: url("../../images/Contact_Us_BAckground.png");
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

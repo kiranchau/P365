@@ -1,0 +1,101 @@
+
+.payment-success-failure-page {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding: 1rem;
+
+    .text-container {
+        margin: auto;
+        max-width: 40rem;
+    }
+
+    .divider {
+        width: 10rem;
+        margin: 2rem auto 2rem auto;
+    }
+
+    .text-right {
+        text-align: right;
+    }
+
+    .text-left {
+        text-align: left;
+    }
+}
+
+.payment-failure-image {
+    background-image: url(../../images/Payment_Failure_background.png);
+}
+
+.payment-success-image {
+    background-image: url(../../images/Payment_Successful_background.png);
+}
+.payment-success-wrap{
+    background-image: url(../../images/Payment_Successful_background.png);
+    height: 85vh;
+    padding: 50px 10px 0 10px;
+    .details{
+        .row-wrap{
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            align-items: center;
+            margin-bottom: 10px;
+            p{
+                margin: 0;
+            }
+            .label-text, .value-text{
+                color: #595959;
+                text-align: left;
+            }
+            .value-policy{
+                color: #ec2d82;
+                font-weight: bold;
+                text-align: left;
+                text-decoration: underline;
+            }
+        }
+    }
+    .bordertop{
+        border-top: 1px solid #acacac;
+        width: 40%;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+    .bottom-info{
+       p{
+        color: #595959;
+       }
+        a{
+            color: #ec2d82;
+                font-weight: bold;
+                text-decoration: underline;
+        }
+    }
+    .goback-btn{
+        background-color: transparent;
+        color: #ec2d82;
+        border: none;
+        text-decoration: underline;
+        font-weight: bold;
+    }
+    p{
+        color: #595959;
+       }
+       h4{
+        font-size: 30px;
+        font-weight: bold;
+        color: #4a4a4a;
+        margin-top: 10px;
+       }
+       .sub-head{
+        color: #4a4a4a;
+        font-weight: bold;
+       }
+}
+
+
+
+

@@ -1,0 +1,55 @@
+.bg-image{
+    background: url("../../images/background.png") 0 0 no-repeat;
+    background-size: cover;
+    height: 80vh;
+    align-items: center;
+    display: flex;
+}
+.signin-wrap{
+    .inner-sign-in{
+        width: 50%;
+        margin: 0 auto;
+        .heading{
+            color: #4a4a4a;
+            font-size: 38px;
+            
+        }
+        .form-floating{
+            margin: 40px;
+
+        }
+    }
+    .otp-form-wrap{
+        .form-floating{
+            margin:40px 20px;
+            #floatingInput{
+                border-color: rgb(122, 122, 122);
+                font-size: 40px;
+                font-weight: bold;
+                text-align: center;
+                &:focus{
+                    border-color: #ec2d82;
+                }
+            }
+        }
+    }
+    .time-text{
+        font-weight: bold;
+        color:#ec2d82;
+    }
+    .send-code-link{
+        cursor: pointer;
+        &:hover{
+            text-decoration: underline;
+            color: #ec2d82;
+        }
+    }
+}
+@media screen and (max-width:992px){
+    .signin-wrap .inner-sign-in{
+        width: 100%;
+        .form-floating{
+            margin: 40px 0;
+        }
+    }
+}

@@ -1,0 +1,99 @@
+.skeleton-container{
+    position: relative;
+    height: fit-content;
+    padding: 20px;
+    border-radius: 10px;
+    background: #FDFEFE;
+    box-shadow: 7px 10px 13px -9px rgb(255 90 163 / 59%);
+    height: 100%!important;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.skeleton-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+.bg-color{
+    background-color: #f6f6f6;
+}
+.middle-container{
+   display: flex;
+   align-items: center;
+   gap: 10px;
+.skeleton-column{
+    flex: 1;
+}
+}
+.skeleton-row ~.skeleton-column{
+    margin-top: 20px;
+}
+
+.skeleton-row:nth-child(3){
+    margin-top: 35px;
+}
+
+.circle{
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.line{
+    margin-top: 15px;
+    height: 20px;
+    width: 300px;
+    border-radius: 4px;
+}
+
+.line1{
+    width: 200px;
+    margin-top: 0;
+}
+
+.line3{
+    width: 80%;
+}
+
+.line4{
+    width: 100%;
+}
+
+.line5{
+    width: 55%;
+}
+
+.box{
+    height: 40px;
+    width: 150px;
+    border-radius: 10px;
+}
+.boxShadow{
+    box-shadow: 0px 2px 5px 0px rgb(209, 209, 209);
+}
+.loading-animation{
+    overflow: hidden;
+    background: #D0D0D0;
+}
+
+.loading-animation::before{
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    animation: loading 1s infinite;
+    background: linear-gradient(to right, transparent,#D9D9D9,transparent);
+}
+
+@keyframes loading {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(100%);
+    }
+}
